@@ -1,0 +1,102 @@
+@use 'variaveis';
+
+.header {
+  background-color: variaveis.$corDeFundo;
+  padding: 20px 0;
+
+  &__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+  }
+
+  &__title {
+    color: variaveis.$corDoTexto;
+    font-family: Alycidon;
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cta {
+    font-size: 18px;
+    background-color: variaveis.$corDoBotao;
+    color: variaveis.$corDoTexto;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(variaveis.$corDoBotao, 10%);
+    }
+  }
+
+  &__music-control {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 2px solid variaveis.$corDoTexto;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .icon-bar {
+      position: absolute;
+      background-color: variaveis.$corDoTexto;
+      width: 3px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s ease;
+  
+      &:first-child {
+        transform: translate(-5px, -50%);
+      }
+  
+      &:last-child {
+        transform: translate(2px, -50%);
+      }
+    }
+  
+    &.playing {
+      .icon-bar {
+        &:first-child {
+          transform: translate(-50%, -50%) rotate(90deg);
+          height: 14px;
+        }
+  
+        &:last-child {
+          transform: translate(-50%, -50%);
+          height: 14px;
+        }
+      }
+    }
+  }
+}

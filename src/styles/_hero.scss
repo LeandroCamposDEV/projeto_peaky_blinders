@@ -1,0 +1,23 @@
+.hero {
+    width: 100vw;
+    overflow: hidden;
+  
+    &__content {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    &__branding {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    &__logo,
+    &__banner {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
