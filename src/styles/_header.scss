@@ -47,9 +47,14 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 
+    
     &:hover {
       background-color: darken(variaveis.$corDoBotao, 10%);
     }
+  }
+
+  #contato {
+    margin-left: 8px;
   }
 
   &__music-control {
@@ -77,11 +82,11 @@
       transition: all 0.3s ease;
   
       &:first-child {
-        transform: translate(-5px, -50%);
+        transform: translate(2px, -50%);
       }
   
       &:last-child {
-        transform: translate(2px, -50%);
+        transform: translate(-5px, -50%);
       }
     }
   
@@ -97,6 +102,53 @@
           height: 14px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    &__left {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__logo {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      width: 60px; // Reduzido para melhor se adequar a telas menores
+    }
+
+    &__title {
+      font-size: 30px; // Reduzido para melhor se adequar a telas menores
+      letter-spacing: 3px;
+    }
+
+    &__right {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &__cta {
+      padding: 12px 16px;
+      font-size: 16px;
+    }
+
+    #contato {
+      margin-left: 1px;
+    }
+
+
+    &__music-control {
+      margin-left: 0; // Removido o margin-left para alinhar melhor em telas menores
     }
   }
 }

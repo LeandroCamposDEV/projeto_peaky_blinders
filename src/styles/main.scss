@@ -1,6 +1,9 @@
 @use 'variaveis';
 @use 'hero';
 @use 'header';
+@use 'show-info';
+@use 'subscription-plans';
+@use 'footer';
 
 @font-face {
     font-family: Alycidon;
@@ -12,7 +15,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: variaveis.$corDeFundo;
     font-family: Roboto;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
 }
 

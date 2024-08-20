@@ -10,7 +10,7 @@
     <title>Peaky Blinders fanclube</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__container">
           <div class="header__left">
             <img src="./dist/images/peaky-blinders-logo.png" alt="Peaky Blinders Logo" class="header__logo">
@@ -18,6 +18,7 @@
           </div>
           <div class="header__right">
             <button class="header__cta">Assine agora</button>
+            <button class="header__cta" id="contato">Contato</button>
             <button class="header__music-control" id="musicControl" aria-label="Controle de música">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -37,6 +38,103 @@
             </div>
         </div>
     </section>
+
+    <section class="show-info" id="personagens">
+      <div class="show-info__container">
+        <div class="show-info__history">
+          <h2 class="show-info__title">A História de Peaky Blinders</h2>
+          <hr>
+          <p class="show-info__text">Peaky Blinders é uma série de televisão britânica criada por Steven Knight. Ambientada em Birmingham, Inglaterra, no período pós-Primeira Guerra Mundial, a série segue as façanhas da família criminosa Shelby. O nome "Peaky Blinders" refere-se a uma gangue real que operava na cidade no final do século XIX, conhecida por costurar lâminas de barbear nas viseiras de seus bonés.</p>
+          <div class="show-info__image-container">
+            <img src="./dist/images/shelby-family-peaky-blinders.png" alt="Peaky Blinders Family" class="show-info__family-image">
+          </div>
+        
+        <div class="show-info__characters">
+          <h2 class="show-info__title">Personagens Principais</h2>
+          <hr>
+          <div class="character character--right">
+            <div class="character__image">
+              <img src="./dist/images/characters/character_01.jpg" alt="Tommy Shelby" class="character__img">
+            </div>
+            <div class="character__info">
+              <h3 class="character__name">Tommy Shelby</h3>
+              <p class="character__description">O líder carismático e estrategista dos Peaky Blinders. Tommy é um veterano da Primeira Guerra Mundial que usa sua inteligência e astúcia para expandir o império criminoso de sua família.</p>
+            </div>
+          </div>
+          
+          <div class="character character--right">
+            <div class="character__info">
+              <h3 class="character__name">Arthur Shelby</h3>
+              <p class="character__description">O irmão mais velho de Tommy, Arthur é conhecido por seu temperamento explosivo e lealdade feroz à família. Ele luta com seus demônios internos enquanto ajuda a gerenciar os negócios dos Shelby.</p>
+            </div>
+            <div class="character__image">
+              <img src="./dist/images/characters/character_03.jpg" alt="Arthur Shelby" class="character__img">
+            </div>
+          </div>
+          
+          <div class="character character--right">
+            <div class="character__image">
+              <img src="./dist/images/characters/character_02.jpeg" alt="Polly Gray" class="character__img">
+            </div>
+            <div class="character__info">
+              <h3 class="character__name">Polly Gray</h3>
+              <p class="character__description">A tia dos irmãos Shelby e tesoureira da empresa familiar. Polly é uma mulher forte e intuitiva que muitas vezes atua como a voz da razão e a espinha dorsal da família.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription-plans" id="planos">
+      <div class="subscription-plans__container">
+        <h2 class="subscription-plans__title">Planos de Assinatura</h2>
+        <div class="subscription-plans__options">
+          <div class="plan plan--basic">
+            <h3 class="plan__title">Plano Garrison</h3>
+            <p class="plan__price">R$ 29,99/mês</p>
+            <ul class="plan__features">
+              <li>Acesso a conteúdo exclusivo do fã-clube</li>
+              <li>Newsletter mensal com novidades da série</li>
+              <li>Papel de parede exclusivo para celular</li>
+              <li>5% de desconto na loja oficial do Peaky Blinders</li>
+            </ul>
+            <button class="plan__button">Assinar Agora</button>
+          </div>
+          <div class="plan plan--premium">
+            <h3 class="plan__title">Plano Shelby Company Limited</h3>
+            <p class="plan__price">R$ 59,99/mês</p>
+            <ul class="plan__features">
+              <li>Todos os benefícios do Plano Garrison</li>
+              <li>Acesso antecipado a episódios novos</li>
+              <li>Conteúdo de bastidores exclusivo</li>
+              <li>Convites para eventos virtuais com o elenco</li>
+              <li>15% de desconto na loja oficial do Peaky Blinders</li>
+              <li>Boné Peaky Blinders exclusivo (enviado após 3 meses de assinatura)</li>
+            </ul>
+            <button class="plan__button plan__button--premium">Assinar Agora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="./dist/images/peaky-blinders-logo.png" alt="Peaky Blinders Logo" class="footer__logo-img">
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#inicio" class="footer__nav-link">Início</a></li>
+            <li class="footer__nav-item"><a href="#personagens" class="footer__nav-link">Personagens</a></li>
+            <li class="footer__nav-item"><a href="#planos" class="footer__nav-link">Planos</a></li>
+            <li class="footer__nav-item"><a href="#contato" class="footer__nav-link">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          <p>&copy; 2024 Peaky Blinders Fanclub. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
 <script src="./dist/js/main.js"></script>
 </body>
